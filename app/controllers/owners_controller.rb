@@ -10,7 +10,8 @@ class OwnersController < ApplicationController
     erb :'/owners/new'
   end
 
-  post '/owners' do 
+  post '/owners' do
+    @owner = Owner.create(params["owner"])
     binding.pry
   end
 
