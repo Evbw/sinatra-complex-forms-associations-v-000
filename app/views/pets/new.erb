@@ -10,10 +10,6 @@
   
   <br></br>
   
-  <label>Choose an existing pet:</label>
-  
-  <br></br>
-  
   <% Owner.all.each do |pet| %>
   <input type="checkbox" name="pet[owner_id]" id="<%= owner.id %>" value="<%= owner.name %>" <%='checked' if @pet.owner.name == owner.name %>><%= owner.name %></input>
   <% end %>
