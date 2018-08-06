@@ -33,5 +33,5 @@ class PetsController < ApplicationController
   end
   
   get '/pets/:id/edit' do
-    @pet = 
+    @pet = Pet.find(params[:id])
 end
